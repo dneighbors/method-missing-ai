@@ -17,7 +17,7 @@ You will get an AI generated response for that method and parameter set.
 ex: someobject.add(2, 5) will return 7
 
 ## Quick Tutorial
-<div style="position: relative; padding-bottom: 64.63195691202873%; height: 0;"><iframe src="https://www.loom.com/embed/fff86fdf1c654299b594e9cff3e227f2?sid=b476bdfc-2394-4ba5-99df-5f7577d3d3ea" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+[![Tutorial](https://cdn.loom.com/sessions/thumbnails/fff86fdf1c654299b594e9cff3e227f2-1708122392387-with-play.gif)](https://www.loom.com/share/fff86fdf1c654299b594e9cff3e227f2)
 
 ## Thank You's
 * [Ruby AI Builders Community](https://discord.gg/29nHa6fT)
