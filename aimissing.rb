@@ -1,11 +1,12 @@
 require 'openai'
+require 'dotenv'
 
 class MyDynamicClass
   def method_missing(method_name, *args, &block)
       begin
         super
       rescue NoMethodError
-        client = OpenAI::Client.new(access_token: '')
+        client = OpenAI::Client.new(access_token: ENV['OPENAI_ACCESS_TOKEN'])
         puts "You tried to call #{method_name} with arguments: #{args.inspect}"
         response = client.chat(parameters: {
                                   model: 'gpt-3.5-turbo',
