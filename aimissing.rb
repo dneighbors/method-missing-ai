@@ -7,7 +7,7 @@ class MyDynamicClass
       super
     rescue NoMethodError
       client = OpenAI::Client.new(access_token: ENV['OPENAI_ACCESS_TOKEN'])
-      puts "You tried to call #{method_name} with arguments: #{args.inspect}"
+      #debug      puts "You tried to call #{method_name} with arguments: #{args.inspect}"
       response = client.chat(
         parameters: {
           model: 'gpt-4',
@@ -54,16 +54,8 @@ class MyDynamicClass
 
   def missing_method_properties
     {
-      # method_name: { type: 'string', description: 'The name of the method that is missing.' },
       result: { type: 'string', description: 'The result of the method call.' }
-      # parameters: { type: 'array', description: 'The parameters of the method call.' }
     }
   end
 
-  def respond_to_missing?(method_name, include_private = false)
-    method_name.to_s.start_with?('dynamic_') || super
-  end
 end
-
-# obj = MyDynamicClass.new
-# obj.dynamic_hello('world') { puts "Hello from the block!" }
