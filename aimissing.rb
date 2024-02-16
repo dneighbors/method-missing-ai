@@ -1,5 +1,5 @@
 require 'openai'
-require 'dotenv'
+require 'dotenv/load'
 
 class MyDynamicClass
   def method_missing(method_name, *args, &block)
